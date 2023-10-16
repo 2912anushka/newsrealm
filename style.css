@@ -1,0 +1,145 @@
+/* Reset default browser styles */
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    outline: none;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+
+p {
+    color: #424242;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: "Lato",sans-serif;
+    padding: 8px 0;
+}
+
+
+ul{
+    list-style: none;
+}
+
+.hover-link{
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px)
+.container {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+main {
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+    display: flex;
+        margin: 10px;
+}
+
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    flex: 0 0 calc(33.33% - 20px);
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+/*    transform: translateY(-2px);*/
+/*    .card:hover */
+    width: 500px;
+    height: 450px;
+    margin: 0 auto; /* Center horizontally */
+    position: relative;
+    top: -75px; /* Center vertically */
+    z-index: 1; /* Bring the hovered card to the front */
+
+}
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+
+.news-source {
+    margin-block: 12px;
+}
+
+.stretch-image {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Change the color of the active and hover links to black */
+.pagination .page-link {
+    color: black;
+}
+
+/* Change the background color of active and hover links to white */
+.pagination .page-item.active .page-link, .pagination .page-item .page-link:hover {
+    background-color: white;
+}
+
+.footer {
+            background-color: #333; /* Background color of the footer */
+            color: white; /* Text color */
+            padding: 20px; /* Spacing around the content */
+            text-align: center; /* Center-align the content */
+        }
+#newsrealm:hover{
+    font-size: 80px;
+/*    background-color: #007bff; /* Highlight background color */*/
+    color: white;
+}
+/*.banner{
+    background: url('pexels-pixabay-159652.jpg');
+    background-size: cover;
+/*    background-attachment: fixed;*/
+
